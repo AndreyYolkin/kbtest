@@ -1,0 +1,36 @@
+{
+  "name": "kbtest",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "server": "ts-node server.ts"
+  },
+  "dependencies": {
+    "h3": "^2.0.1-rc.16",
+    "jiti": "^2.6.1",
+    "json-server": "^1.0.0-beta.12",
+    "listhen": "^1.9.0",
+    "ofetch": "^1.4.1",
+    "pinia": "^3.0.4",
+    "unocss": "^66.6.6",
+    "vue": "^3.5.25"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "@vue/tsconfig": "^0.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0-beta.13",
+    "vue-tsc": "^3.1.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "^8.0.0-beta.13"
+    }
+  }
+}
