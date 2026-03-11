@@ -12,13 +12,7 @@ const store = useKanbanStore()
 
 // Get all tasks that belong to this column (regardless of specific status)
 const columnTasks = computed(() => {
-  // Find all statuses that belong to this column
-  const statusIds = store.statuses
-    .filter(s => s.columnId === props.column.id)
-    .map(s => s.id)
-  
-  // Filter tasks that have one of these statuses
-  return store.tasks.filter(task => statusIds.includes(task.statusId))
+  return []
 })
 </script>
 
